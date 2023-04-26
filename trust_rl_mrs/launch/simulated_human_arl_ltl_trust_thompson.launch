@@ -1,0 +1,3 @@
+<launch>
+  <node name="no_gazebo_arl_pm" pkg="trust_rl_mrs" type="no_gazebo_arl_prod_mdp_ts.py" respawn="false" output="screen"/>
+</launch>

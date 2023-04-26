@@ -1,0 +1,3 @@
+<launch>
+  <node name="pretrain_arl_pm" pkg="trust_rl_mrs" type="pretrain_arl_prod_mdp.py" respawn="false" output="screen"/>
+</launch>

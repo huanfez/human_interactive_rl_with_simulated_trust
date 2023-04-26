@@ -1,0 +1,3 @@
+<launch>
+    <node name = "sinulated_human_interactive_rl" type = "interactive_rl_sim_ltl_lss_maxprob.py" pkg = "trust_rl_mrs" respawn = "false" output = "screen"/>
+</launch>

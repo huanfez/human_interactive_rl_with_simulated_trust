@@ -1,0 +1,15 @@
+class files:
+
+    automaton.py - define the class "Automaton"
+    markov_decision_process.py - define the class "MDP"
+
+    product_mdp.py - define the operation: mdp product with automaton
+
+    q_learning.py - define the class "RL"
+
+A branch that works on no adversary:
+    1. create an mdp with 5*5 cell environment
+    2. create a buchi automaton by using os program "ltl2tgba" command: needs more ltl formulae
+    3. generate another mdp with product operation (1 & 2)
+    4. use the generated states and transitions from 3 to find the preferable path (active learning in gazebo): needs
+    more tunings on rewards and iteration steps

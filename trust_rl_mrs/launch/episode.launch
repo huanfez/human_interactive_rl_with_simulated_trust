@@ -1,0 +1,4 @@
+<launch>
+    <node pkg = "trust_rl_mrs" name = "episode_server_trial" type = "episode_server.py" respawn = "false" output="screen"/>
+    <node pkg = "trust_rl_mrs" name = "episode_trial" type = "episode_client.py" respawn = "false" output="screen"/>
+</launch>
