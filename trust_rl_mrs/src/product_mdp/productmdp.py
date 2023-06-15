@@ -13,7 +13,6 @@ def product_mdp(lmdp, automaton):
     pm_acc_states = []
 
     aut_acc_states = automaton.get_acc_states(automaton.graph)
-
     state_list = queue.Queue()  # queue for temporary state
 
     label_of_init_state = lmdp.state_labels[lmdp.init_state]
@@ -70,7 +69,6 @@ def product_mdp(lmdp, automaton):
 
 def get_mdp_successors(mdp_cur_state, lmdp):
     mdp_next_states = []
-
     # obtain the neighbor states for the mdp
     for action in lmdp.actions[mdp_cur_state]:
         mdp_next_state = lmdp.get_next_state(mdp_cur_state, action)
